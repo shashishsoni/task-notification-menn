@@ -21,7 +21,6 @@ mongoose.connect(process.env.MONGODB_URI)
 // Routes
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/createuser', require('./routes/createuserpage')); // New reference
 
 // Home route
 app.get('/', (req, res) => {
