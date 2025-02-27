@@ -9,7 +9,7 @@ export default function UserPage() {
   const [showPhoneInput, setShowPhoneInput] = useState(false);
 
   const generateDeepLink = () => {
-    const baseUrl = 'http://localhost:3000'; // Use localhost for testing
+    const baseUrl = 'https://task-notification-menn.vercel.app/'; // Use localhost for testing
     return `${baseUrl}/name/createuserpage?username=${username}`; // Long shareable link with parameters
   };
 
@@ -45,7 +45,7 @@ export default function UserPage() {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/notifications/send-sms`, {
+      const response = await fetch(`https://task-notification-menn.onrender.com/api/notifications/send-sms`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

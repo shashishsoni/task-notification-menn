@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from your frontend
+  origin: 'https://task-notification-menn.vercel.app', // Allow requests from your frontend
   credentials: true // Allow credentials (cookies, authorization headers, etc.)
 }));
 app.use(express.json());
