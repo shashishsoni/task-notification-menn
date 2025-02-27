@@ -19,6 +19,10 @@
       "dest": "server/index.js"
     },
     {
+      "src": "/admin",
+      "dest": "client/build/admin.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "client/build/$1"
     },
