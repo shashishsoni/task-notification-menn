@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "render:install": "cd server && npm install",
-    "render:start": "cd server && npm start"
+    "render:start": "cd server && npm start",
+    "test": "next test",
+    "vercel-build": "next build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -22,7 +24,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
-    "react-scripts": "^5.0.1",
     "twilio": "^5.4.5"
   },
   "devDependencies": {
