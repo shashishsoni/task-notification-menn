@@ -1,0 +1,18 @@
+version: 1
+services:
+  - type: web
+    name: task-notification-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: ./server
+    autoDeploy: true
+
+  - type: static
+    name: task-notification-client
+    env: static
+    plan: free
+    buildCommand: npm install
+    publish: ./client/build
+    autoDeploy: true
